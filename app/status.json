@@ -1,0 +1,11 @@
+﻿{
+    "state":  "Washington",
+    "customersOut":  355,
+    "threshold":  10000,
+    "status":  "normal",
+    "sourceUpdated":  "13m ago",
+    "checkedAt":  "2026-03-26T19:37:51.2074965-07:00",
+    "sourceUrl":  "https://poweroutage.us/area/state/washington",
+    "lastAlertAt":  null,
+    "lastAlertCount":  null
+}

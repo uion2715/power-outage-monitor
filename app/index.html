@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Washington Power Outage Watch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <p class="eyebrow">Live Monitor</p>
+      <h1>Washington Power Outage Watch</h1>
+      <p class="lede">
+        A shareable dashboard for statewide outages from poweroutage.us with a
+        10,000-customer alert threshold.
+      </p>
+    </section>
+
+    <section class="status-card" id="status-card" data-state="loading">
+      <div class="status-topline">
+        <span class="badge" id="badge">Loading</span>
+        <span class="polling">Refreshes every 60 seconds</span>
+      </div>
+
+      <div class="big-number" id="customers-out">--</div>
+      <p class="big-label">Customers out in Washington</p>
+
+      <div class="stats">
+        <article class="stat">
+          <span class="label">Threshold</span>
+          <strong id="threshold">10,000</strong>
+        </article>
+        <article class="stat">
+          <span class="label">Source Updated</span>
+          <strong id="source-updated">--</strong>
+        </article>
+        <article class="stat">
+          <span class="label">Checked At</span>
+          <strong id="checked-at">--</strong>
+        </article>
+      </div>
+
+      <div class="meta">
+        <p id="summary">Waiting for the latest status file.</p>
+        <a id="source-link" href="https://poweroutage.us/area/state/washington" target="_blank" rel="noreferrer">
+          Open source page
+        </a>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h2>How to share it</h2>
+      <p>
+        Keep the PowerShell watcher running so it updates <code>status.json</code>,
+        then serve this <code>app</code> folder from any web host, shared machine,
+        or internal web server.
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
