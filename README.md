@@ -84,6 +84,7 @@ After that, GitHub Pages will host the dashboard on a public URL and the workflo
 - If you need faster than that, the next step would be a small hosted API or serverless function instead of scheduled static publishing.
 
 ## Notes
+Updated 
 
 - Default threshold is `10,000`, but you can override it with `-Threshold`.
 - The script depends on the current Washington page layout. If `poweroutage.us` changes the markup, the regex may need a quick update.
